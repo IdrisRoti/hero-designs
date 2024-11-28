@@ -49,8 +49,8 @@ const BlueforceAi = () => {
             backgroundRepeat: "no-repeat",
          }}
         >
-          <div className='absolute z-50 flex items-center justify-center h-full gap-8'>
-            <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: .5, ease: "easeInOut", delay: 1}} className='bg-[#FCFCFC] w-[1px] h-[390px]' />
+          <div className='absolute z-50 flex items-start md:items-center justify-center h-full pt-14 md:pt-0 gap-8'>
+            <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: .5, ease: "easeInOut", delay: 1}} className='bg-[#FCFCFC] w-[1px] h-[300px] md:h-[390px]' />
             <div className='px-2 md:w-[70%] lg:w-[50%]'>
               <motion.h1 initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: .5, ease: "easeInOut"}} className='text-3xl md:text-6xl'>{currentTab?.label},<br />
               Machine Intelligent</motion.h1>

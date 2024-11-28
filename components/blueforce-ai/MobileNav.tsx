@@ -21,10 +21,10 @@ const MobileNav = () => {
 
   return (
     <div className="md:hidden">
-        <button onClick={() =>setShowNav(true)} className="md:hidden">
+        <motion.button initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: .5, ease: "easeInOut"}} onClick={() =>setShowNav(true)} className="md:hidden">
                 <span className="sr-only">Open Navigation menu</span>
                 <RiMenu3Fill className="text-[#1e1e1e] size-6" />
-        </button>
+        </motion.button>
             {showNav && <AnimatePresence>
                             <motion.ul 
                             initial={{opacity: 0}}
