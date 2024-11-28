@@ -14,7 +14,7 @@ const Navbar = () => {
         initial={{y: -30, opacity: 0}}
         animate={{y: 0, opacity: 1}}
         transition={{ duration: .5, ease: "easeIn"}}
-        className="">
+        className="h-[29px]">
         <div className='flex items-center justify-between'>
             <div className="flex items-center gap-1">
                 <HiMoon className="size-5" />
