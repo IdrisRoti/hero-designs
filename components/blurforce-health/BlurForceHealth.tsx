@@ -83,7 +83,7 @@ const BlurForceHealth = () => {
             <motion.div 
                 initial={{ translateX: "0%" }}
                 animate={{ translateX: "-300%" }}
-                transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 className="flex items-center gap-3 -translate-x-[300%] -mr-[54px]">
                {reviews.map(({id, name, image, review}) => (
                     <ReviewCard className="md:hidden shrink-0 w-[25rem]" key={id} name={name} image={image} review={review} />
