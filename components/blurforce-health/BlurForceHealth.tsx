@@ -56,7 +56,7 @@ const BlurForceHealth = () => {
             <motion.div 
                 initial={{ x: "0%" }}
                 animate={{ x: "-100%" }}
-                transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
                 className="flex items-center">
                {reviews.map(({id, name, image, review}) => (
                     <ReviewCard className="shrink-0 w-[25rem] mr-3" key={id} name={name} image={image} review={review} />
@@ -65,7 +65,7 @@ const BlurForceHealth = () => {
             <motion.div 
                 initial={{ x: "0%" }}
                 animate={{ x: "-100%" }}
-                transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
                 className="flex items-center">
                {reviews.map(({id, name, image, review}) => (
                     <ReviewCard className="shrink-0 w-[25rem] mr-3" key={id} name={name} image={image} review={review} />
