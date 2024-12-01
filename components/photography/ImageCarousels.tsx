@@ -26,7 +26,7 @@ const ImageCarousels = () => {
         <InfiniteCarousel>
                 {
                      imagePaths.map((path, i) => (
-                        <div key={i} className="flex-shrink-0 mr-5 w-[20rem] h-[8rem] md:h-[12rem] relative overflow-hidden">
+                        <div key={i} className="flex-shrink-0 mr-3 md:mr-5 w-[20rem] h-[10rem] md:h-[12rem] relative overflow-hidden">
                             <Image
                                 src={path}
                                 alt="Display Photo"
@@ -40,7 +40,7 @@ const ImageCarousels = () => {
         <InfiniteCarousel direction="right">
                 {
                     imagePaths.map((path, i) => (
-                        <div key={i} className="flex-shrink-0 mr-5 w-[20rem] h-[8rem] md:h-[12rem] relative overflow-hidden">
+                        <div key={i} className="flex-shrink-0 mr-3 md:mr-5 w-[20rem] h-[10rem] md:h-[12rem] relative overflow-hidden">
                             <Image
                                 src={path}
                                 alt="Display Photo"
