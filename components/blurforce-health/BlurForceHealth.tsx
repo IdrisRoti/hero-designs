@@ -23,24 +23,6 @@ const reviews = [
         name: "Jessy Jones",
         review: "This health product has significantly improved my overall well-beign - It's to use and I've noticed a positive difference in my energy level and vitality!"
     },
-    {
-        id: 4,
-        image: "/akira/face1.png",
-        name: "Anthony Marshall",
-        review: "This health product has significantly improved my overall well-beign - It's to use and I've noticed a positive difference in my energy level and vitality!"
-    },
-    {
-        id: 5,
-        image: "/akira/face2.png",
-        name: "Stacey Kazeem",
-        review: "This health product has significantly improved my overall well-beign - It's to use and I've noticed a positive difference in my energy level and vitality!"
-    },
-    {
-        id: 6,
-        image: "/akira/face3.png",
-        name: "Jessy Jones",
-        review: "This health product has significantly improved my overall well-beign - It's to use and I've noticed a positive difference in my energy level and vitality!"
-    },
 ]
 
 const BlurForceHealth = () => {
@@ -70,23 +52,23 @@ const BlurForceHealth = () => {
                 <button className="h-full w-[25%] uppercase text-white text-sm">Sign up</button>
             </motion.div>
         </section>
-        <motion.section initial={{ opacity: 0}} animate={{ opacity: 1}} transition={{duration: .5, delay: 2}} className="mt-16 overflow-x-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
+        <motion.section initial={{ opacity: 0}} animate={{ opacity: 1}} transition={{duration: .5, delay: 2}} className="flex items-center mt-16 overflow-x-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
             <motion.div 
-                initial={{ translateX: "0%" }}
-                animate={{ translateX: "-100%" }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="hidden md:flex items-center gap-3 -mr-9">
+                initial={{ x: "0%" }}
+                animate={{ x: "-100%" }}
+                transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+                className="flex items-center">
                {reviews.map(({id, name, image, review}) => (
-                    <ReviewCard className="shrink-0 w-[25rem]" key={id} name={name} image={image} review={review} />
+                    <ReviewCard className="shrink-0 w-[25rem] mr-3" key={id} name={name} image={image} review={review} />
                ))}
             </motion.div>
             <motion.div 
-                initial={{ translateX: "0%" }}
-                animate={{ translateX: "-300%" }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="flex items-center gap-3 -translate-x-[300%] -mr-[54px]">
+                initial={{ x: "0%" }}
+                animate={{ x: "-100%" }}
+                transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+                className="flex items-center">
                {reviews.map(({id, name, image, review}) => (
-                    <ReviewCard className="md:hidden shrink-0 w-[25rem]" key={id} name={name} image={image} review={review} />
+                    <ReviewCard className="shrink-0 w-[25rem] mr-3" key={id} name={name} image={image} review={review} />
                ))}
             </motion.div>
         </motion.section>
