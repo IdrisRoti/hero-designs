@@ -25,7 +25,7 @@ const Studios = () => {
                     initial={{opacity: 0}} 
                     animate={{opacity: 1}} 
                     transition={{ duration: 1, delay: 1.8 }}
-                    className="text-white/70 md:w-[20%]">Dive deep into interactive environments, unravel the science behind Mars' exploration, and feel the thrill of discovery as you navigate this extraordinary extraterrestrial world.</motion.p>
+                    className="text-white/70 md:w-[20%]">Dive deep into interactive environments, unravel the science behind Mars&apos; exploration, and feel the thrill of discovery as you navigate this extraordinary extraterrestrial world.</motion.p>
                 <ul className="flex flex-col items-end self-end">
                     {
                         ["london", "lagos", "new york", "milan"].map((place) => (
