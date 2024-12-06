@@ -59,7 +59,7 @@ const Unwrap = () => {
                 className="relative flex items-end justify-center lg:justify-between md:w-full mx-auto h-full">
                 <UserPhotos position="left" />
                 <Image
-                    src="/unwrap/iphone.png"
+                    src="/unwrap/iPhone.png"
                     alt="iphone"
                     width={300}
                     height={900}
