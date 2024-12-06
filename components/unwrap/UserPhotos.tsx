@@ -1,5 +1,3 @@
-import { motion } from "framer-motion"
-
 const userImagesLeft = [
     {
         id: 1,
@@ -129,24 +127,18 @@ const UserPhotos = ({position}: {position: "left" | "right"}) => {
   return (
     <div className="relative p-5 w-full h-full hidden lg:block">
         {
-            position === "left" ?  userImagesLeft.map((image, i) => (
-                    <motion.img
-                        initial={{ scale: "40%", opacity: .5}} 
-                        animate={{scale: "60%", opacity: 1}}
-                        transition={{ delay: .2*i, duration: 1, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
+            position === "left" ?  userImagesLeft.map((image) => (
+                    <img
                         key={image.id}
-                        className={`absolute scale-[.6] xl:scale-[.8] 2xl:scale-90 ${image.position}`}
+                        className={`absolute scale-[.5] xl:scale-[.7] 2xl:scale-[.8] ${image.position}`}
                         src={image.path}
                         alt="user image"
                     />
             )) : (
-                userImagesRight.map((image, i) => (
-                    <motion.img
-                        initial={{ scale: "40%", opacity: .5}} 
-                        animate={{scale: "60%", opacity: 1}}
-                        transition={{ delay: .2*i, duration: 1, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
+                userImagesRight.map((image) => (
+                    <img
                         key={image.id}
-                        className={`absolute scale-[.6] xl:scale-[.8] 2xl:scale-90 ${image.position}`}
+                        className={`absolute scale-[.5] xl:scale-[.7] 2xl:scale-[.8] ${image.position}`}
                         src={image.path}
                         alt="user image"
                     />
