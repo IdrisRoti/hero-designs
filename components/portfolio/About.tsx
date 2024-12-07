@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className="flex items-center h-screen bg-stone-100 mt-20 sticky top-0">
         <div className="w-full bottom-10 mt-10 font-extrabold">
-            <h2 className="uppercase text-gray-500 text-5xl md:text-7xl text-center w-full flex justify-center overflow-hidden">
+            <h2 className="uppercase text-gray-500 text-4xl md:text-7xl text-center w-full flex justify-center overflow-hidden">
                 {
                     "creative".split("").map((char, i) => (
                     <motion.span
@@ -28,7 +28,7 @@ const About = () => {
             </h2>
             <div className="h-[1px] my-5 bg-black/10"/>
             <div className="flex flex-col md:flex-row items-center gap-6 max-md:text-center">
-                <span className="uppercase text-5xl md:text-7xl md:text-right w-full flex justify-center md:justify-end overflow-hidden">
+                <span className="uppercase text-4xl md:text-7xl md:text-right w-full flex justify-center md:justify-end overflow-hidden">
                     {
                         "product".split("").map((char, i) => (
                         <motion.span
@@ -52,7 +52,7 @@ const About = () => {
                 </div>
             </div>
             <div className="h-[1px] my-5 bg-black/10"/>
-            <h2 className="uppercase text-rose-600 text-5xl md:text-7xl text-center flex justify-center overflow-hidden">
+            <h2 className="uppercase text-rose-600 text-4xl md:text-7xl text-center flex justify-center overflow-hidden">
                     {
                                 "designer".split("").map((char, i) => (
                                     <motion.span

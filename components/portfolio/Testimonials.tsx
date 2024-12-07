@@ -22,7 +22,7 @@ const Testimonials = () => {
                             onClick={() => setCurrIndex(id)} 
                             key={id} 
                             className={`
-                                relative shrink-0 w-20 md:w-40 aspect-square rounded-3xl overflow-hidden transition duration-500
+                                relative shrink-0 w-14 md:w-40 aspect-square rounded-2xl md:rounded-3xl overflow-hidden transition duration-500
                                 ${id === currIndex ? "scale-100": "scale-[.7] grayscale"}
                             `}>
                                 <Image
