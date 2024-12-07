@@ -14,7 +14,7 @@ const Hero = () => {
   })
 
   const heightValue = useTransform(scrollYProgress, [0, 1], [50, 100]);
-  const opacity = useTransform(scrollYProgress, [0, .5], [1, 0]);
+  // const opacity = useTransform(scrollYProgress, [0, .5], [1, 0]);
   const yValue = useTransform(scrollYProgress, [0, .5], [0, 50]);
 
   const height = useMotionTemplate`${heightValue}vh`

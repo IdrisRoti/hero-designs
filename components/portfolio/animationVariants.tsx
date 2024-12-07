@@ -6,7 +6,7 @@ export const textVariant = {
         y: "0%",
         transition: {...transition, delay: i}
     }),
-    exit:(i: number) =>  ({
+    exit:() =>  ({
         opacity: 0,
         y: "100%",
     }),
