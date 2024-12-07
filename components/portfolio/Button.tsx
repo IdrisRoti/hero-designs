@@ -9,9 +9,9 @@ const Button = ({children, variant = "solid", className}: TButton) => {
   return (
     <button
         className={`
-            px-4 py-2 rounded-md font-semibold border
-            ${variant === "outlined" && "bg-transparent"}
-            ${variant === "solid" && "bg-[#1e1e1e] text-white"}
+            px-4 py-2 rounded-md font-semibold border transition
+            ${variant === "outlined" && "bg-transparent hover:bg-[#1e1e1e]/10"}
+            ${variant === "solid" && "bg-[#1e1e1e] text-white hover:bg-[#1e1e1e]/70"}
             ${className}
         `}
     >

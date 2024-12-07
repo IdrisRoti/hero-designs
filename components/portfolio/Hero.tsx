@@ -21,8 +21,8 @@ const Hero = () => {
   const y = useMotionTemplate`${yValue}%`
 
   return (
-    <div ref={containerRef} className='max-w-[75rem] mx-auto px-4 h-[200vh]'>
-        <h1 className="text-[3rem] md:text-[7rem] leading-[1] flex flex-col justify-start uppercase mt-28 tracking-wider">
+    <div ref={containerRef} className='max-w-[75rem] mx-auto px-4 lg:h-[200vh] pt-28'>
+        <h1 className="text-[3rem] md:text-[7rem] leading-[1] flex flex-col justify-start uppercase tracking-wider">
             <motion.span className='flex overflow-hidden'>
               {
                 "sandra".split("").map((char, i) => (
@@ -60,7 +60,19 @@ const Hero = () => {
           initial={{opacity: 0}}
           animate={{opacity: 1}}
           transition={{ delay: .5, duration: .8}}
-          className="relative mt-10 w-full">
+          className="relative mt-10 w-full hidden lg:block">
+            <Image
+                src="/portfolio/sandra.jpg"
+                alt="Photo of Sandra"
+                fill
+                className='object-cover'
+            />
+        </motion.div>
+        <motion.div
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}
+          transition={{ delay: .5, duration: .8}}
+          className="relative mt-10 h-[50vh] w-full lg:hidden">
             <Image
                 src="/portfolio/sandra.jpg"
                 alt="Photo of Sandra"

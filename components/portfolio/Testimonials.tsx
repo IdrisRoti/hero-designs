@@ -12,7 +12,6 @@ const Testimonials = () => {
   return (
     <div className="h-screen bg-stone-100 sticky top-0">
         <div className="flex flex-col justify-center items-center h-full max-w-[60rem] mx-auto px-4">
-
         <div className="flex">
             {
                 testimonialsArr.map(({id, image, name}) => {
@@ -22,7 +21,7 @@ const Testimonials = () => {
                             onClick={() => setCurrIndex(id)} 
                             key={id} 
                             className={`
-                                relative shrink-0 w-14 md:w-40 aspect-square rounded-2xl md:rounded-3xl overflow-hidden transition duration-500
+                                relative cursor-pointer shrink-0 w-14 md:w-40 aspect-square rounded-2xl md:rounded-3xl overflow-hidden transition duration-500
                                 ${id === currIndex ? "scale-100": "scale-[.7] grayscale"}
                             `}>
                                 <Image

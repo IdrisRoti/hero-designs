@@ -96,41 +96,41 @@ export const testimonialsArr = [
     {
         id: 1,
         name: "James Johnson",
-        role: "Website developer",
+        role: "Team lead",
         org: "Unitect Inc.",
-        image: "/portfolio/sandra.jpg",
-        testimony: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ut sunt sapiente ipsum qui cum labore suscipit libero distinctio. Tempora eveniet earum dolore enim voluptatem vitae, eligendi quisquam accusantium impedit"
+        image: "/portfolio/photo1.png",
+        testimony: "She has a rare combination of creativity and professionalism. They listen closely and deliver beyond what’s asked."
     },
     {
         id: 2,
-        name: "James Johnson",
+        name: "Antonia Tommason",
         role: "Website developer",
         org: "Unitect Inc.",
-        image: "/portfolio/sandra.jpg",
-                testimony: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ut sunt sapiente ipsum qui cum labore suscipit libero distinctio. Tempora eveniet earum dolore enim voluptatem vitae, eligendi quisquam accusantium impedit"
+        image: "/portfolio/photo2.png",
+        testimony: "Working with Sandra was a seamless experience. They were open to feedback, communicated clearly, and always met deadlines."
     },
     {
         id: 3,
         name: "James Johnson",
-        role: "Website developer",
+        role: "Founder",
         org: "Unitect Inc.",
-        image: "/portfolio/sandra.jpg",
-        testimony: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ut sunt sapiente ipsum qui cum labore suscipit libero distinctio. Tempora eveniet earum dolore enim voluptatem vitae, eligendi quisquam accusantium impedit"
+        image: "/portfolio/photo3.png",
+        testimony: "Her work had a direct impact on our product's success. The new design increased conversions by 35%!"
     },
     {
         id: 4,
-        name: "James Johnson",
-        role: "Website developer",
+        name: "Maria Mariason",
+        role: "Product Manager",
         org: "Unitect Inc.",
-        image: "/portfolio/sandra.jpg",
-        testimony: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ut sunt sapiente ipsum qui cum labore suscipit libero distinctio. Tempora eveniet earum dolore enim voluptatem vitae, eligendi quisquam accusantium impedit"
+        image: "/portfolio/photo6.png",
+        testimony: "Her redesign elevated our product to a whole new level, setting a benchmark for quality in our industry"
     },
     {
         id: 5,
-        name: "James Johnson",
+        name: "Julia McCarthy",
         role: "Website developer",
         org: "Unitect Inc.",
-        image: "/portfolio/sandra.jpg",
-        testimony: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ut sunt sapiente ipsum qui cum labore suscipit libero distinctio. Tempora eveniet earum dolore enim voluptatem vitae, eligendi quisquam accusantium impedit"
+        image: "/portfolio/photo8.png",
+        testimony: "Thanks to her designs, we received overwhelmingly positive feedback from our users and stakeholders alike."
     },
 ]
