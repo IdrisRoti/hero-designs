@@ -14,7 +14,7 @@ const Connect = () => {
         {/* CONTENT */}
         <section className="relative z-30 h-[calc(100vh-80px)] flex flex-col items-center justify-center">
             <motion.h1 initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1}} className="bg-gradient-to-r from-white/60 via-white to-white/60 text-3xl md:text-4xl font-semibold bg-clip-text text-transparent text-center">Connect with People around you</motion.h1>
-            <motion.p initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1, delay: .5}} className="text-white/60 md:w-[60%] lg:w-[40%] text-center mt-4 mb-6 text-sm">Dive deep into interactive environments, unravel the science behind Mars' exploration, and feel the thrill of discovery as you navigate.</motion.p>
+            <motion.p initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1, delay: .5}} className="text-white/60 md:w-[60%] lg:w-[40%] text-center mt-4 mb-6 text-sm">Dive deep into interactive environments, unravel the science behind Mars&apos; exploration, and feel the thrill of discovery as you navigate.</motion.p>
             <motion.div initial={{opacity: 0, y: "100%"}} animate={{opacity: 1, y: 0}} transition={{duration: 1, delay: 1}} className="flex items-center justify-center gap-4">
                 <Button variant="outline">Learn More</Button>
                 <Button>Sign Up</Button>
