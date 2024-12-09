@@ -19,7 +19,7 @@ const Connect = () => {
                 <Button variant="outline">Learn More</Button>
                 <Button>Sign Up</Button>
             </motion.div>
-            <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1, delay: 1.5}} className="relative w-[20rem] md:w-[40rem] lg:w-[50rem] h-[10rem] my-8">
+            <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1, delay: 1.5}} className="relative w-[20rem] md:w-[40rem] lg:w-[50rem] h-[20rem] md:h-[10rem] mt-8 md:mb-8">
                 <Image
                     src="/connect/case.png"
                     alt="case"
