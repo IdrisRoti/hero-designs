@@ -28,7 +28,7 @@ const [openDropDown, setOpenDropDown] = useState(false);
             </div>
             <div className="flex items-center gap-2">
                 <span
-                    onClick={() => setShowSidebar(false)} 
+                    onClick={(e) => {setShowSidebar(false); e.stopPropagation()}} 
                     className="w-6 aspect-square hover:bg-stone-200 transition cursor-pointer rounded-md hidden group-hover:grid place-items-center">
                     <RxDoubleArrowLeft className="size-5 text-stone-400 hover:text-inherit" />
                 </span>
