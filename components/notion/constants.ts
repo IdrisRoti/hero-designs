@@ -25,23 +25,23 @@ export const sidebarTeamLinks = [
                         subLinks: [
                             {
                                 label: "Meetings",
-                                href: "/"
+                                href: "#"
                             },
                             {
                                 label: "Calender",
-                                href: "/"
+                                href: "#"
                             },
                             {
                                 label: "List by type",
-                                href: "/"
+                                href: "#"
                             },
                             {
                                 label: "Mine",
-                                href: "/"
+                                href: "#"
                             },
                             {
                                 label: "All",
-                                href: "/"
+                                href: "#"
                             },
                         ],
                         icon: null,
@@ -51,19 +51,19 @@ export const sidebarTeamLinks = [
                         subLinks: [
                             {
                                 label: "Recently edited",
-                                href: "/"
+                                href: "#"
                             },
                             {
                                 label: "Table by category",
-                                href: "/"
+                                href: "#"
                             },
                             {
                                 label: "Mine",
-                                href: "/"
+                                href: "#"
                             },
                             {
                                 label: "All",
-                                href: "/"
+                                href: "#"
                             },
                         ],
                         icon: null,
@@ -89,23 +89,23 @@ export const sidebarTeamLinks = [
             //             subLinks: [
             //                 {
             //                     label: "Meetings",
-            //                     href: "/"
+            //                     href: "#"
             //                 },
             //                 {
             //                     label: "Calender",
-            //                     href: "/"
+            //                     href: "#"
             //                 },
             //                 {
             //                     label: "List by type",
-            //                     href: "/"
+            //                     href: "#"
             //                 },
             //                 {
             //                     label: "Mine",
-            //                     href: "/"
+            //                     href: "#"
             //                 },
             //                 {
             //                     label: "All",
-            //                     href: "/"
+            //                     href: "#"
             //                 },
             //             ],
             //             icon: null,
@@ -115,19 +115,19 @@ export const sidebarTeamLinks = [
             //             subLinks: [
             //                 {
             //                     label: "Recently edited",
-            //                     href: "/"
+            //                     href: "#"
             //                 },
             //                 {
             //                     label: "Table by category",
-            //                     href: "/"
+            //                     href: "#"
             //                 },
             //                 {
             //                     label: "Mine",
-            //                     href: "/"
+            //                     href: "#"
             //                 },
             //                 {
             //                     label: "All",
-            //                     href: "/"
+            //                     href: "#"
             //                 },
             //             ],
             //             icon: null,
