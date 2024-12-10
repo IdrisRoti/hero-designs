@@ -60,7 +60,7 @@ const SidebarTeamLink = ({icon: Icon, label, subLinks}: TSidebarTeamLink) => {
         {openSubLinks && (
             <div className="ml-3">
                 {
-                    subLinks.length && subLinks.map(({id, icon: Icon, label, subLinks}) => (
+                    subLinks.length && subLinks.map(({id, icon: Icon, label}) => (
                         <button
                             className='flex items-center w-full gap-2 last-of-type:mb-0 hover:bg-stone-200/50 px-2 py-1.5 transition rounded-md' 
                             key={id} 
