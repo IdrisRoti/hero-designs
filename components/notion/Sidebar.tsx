@@ -23,7 +23,7 @@ const Sidebar = ({showSidebar, setShowSidebar}: TSidebar) => {
             exit={{x: "-100%"}}
             transition={{ duration: .3, ease: "easeInOut"}}
             onClick={e => e.stopPropagation()}         
-            className="fixed top-0 left-0 h-screen w-[100vw] md:w-[50vw] lg:w-[22vw] p-2 bg-[rgb(247,247,245)] z-[100] shadow"
+            className="fixed top-0 left-0 h-screen w-[80vw] md:w-[50vw] lg:w-[22vw] p-2 bg-[rgb(247,247,245)] z-[100] shadow"
         >
             <SidebarHeader showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
             <SidebarNavLinks />
