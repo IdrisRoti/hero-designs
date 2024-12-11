@@ -32,7 +32,7 @@ const Treats = () => {
                 initial={{rotate: 0}}
                 animate={{rotate: "360deg"}}
                 transition={{ease: "linear", duration: 5, repeat: Infinity}}
-                className="w-[150px] h-[100px] absolute bottom-0 right-0 md:right-[10%] z-[100]">
+                className="w-[90px] md:w-[150px] h-[50px] md:h-[100px] absolute bottom-0 right-0 md:right-[10%] z-[100]">
                 <Image
                     src="/treats/blueSweet.png"
                     alt="blue candy"
@@ -44,7 +44,7 @@ const Treats = () => {
                 initial={{rotate: 0,}}
                 animate={{rotate: "-360deg"}}
                 transition={{ease: "linear", duration: 10, repeat: Infinity}}
-                className="w-[250px] h-[200px] absolute -bottom-14 -left-10 md:left-[10%] z-[100]">
+                className="w-[150px] md:w-[250px] h-[100px] md:h-[200px] absolute -bottom-6 md:-bottom-14 -left-10 md:left-[10%] z-[100]">
                 <Image
                     src="/treats/candy.png"
                     alt="candy"
@@ -56,7 +56,7 @@ const Treats = () => {
                 initial={{rotate: 0}}
                 animate={{rotate: "360deg"}}
                 transition={{ease: "linear", duration: 5, repeat: Infinity}}
-                className="w-[100px] h-[70px] absolute bottom-1/3 left-[20%] z-[100]">
+                className="w-[50px] md:w-[100px] h-[30px] md:h-[70px] absolute bottom-1/3 left-[20%] z-[100]">
                 <Image
                     src="/treats/yellowSweet.png"
                     alt="yellow candy"
@@ -76,6 +76,7 @@ const Treats = () => {
                     className="object-cover"
                 />
             </motion.div>
+            <div className="w-[30rem] aspect-square bg-white absolute bottom-0 left-1/2 -translate-x-1/2 rounded-full opacity-50 blur-[6rem]" />
         </div>
     </div>
   )
