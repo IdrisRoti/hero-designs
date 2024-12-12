@@ -15,7 +15,7 @@ const Sprint = () => {
 
   return (
     <>
-        <div className="w-screen h-screen overflow-hidden text-white md:text-[#1e1e1e]">
+        <div className="w-screen h-screen overflow-hidden text-white md:text-[#1e1e1e] max-md:after:absolute after:inset-0 after:bg-black/30">
             <Header />
             <section className="w-full max-w-[90rem] mx-auto px-4 h-[calc(100vh-80px)] flex items-center absolute bottom-0 z-[98]">
                 <div className="">

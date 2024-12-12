@@ -13,7 +13,7 @@ const Header = () => {
       className="h-20 w-full absolute z-[99]">
         <nav className="max-w-[90rem] mx-auto px-4 h-full flex items-center justify-between">
             <Image
-                src="/sprint/sprint.png"
+                src="/sprint/Sprint.png"
                 alt="A runner"
                 width={80}
                 height={20}
