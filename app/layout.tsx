@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], weight: ["300", "400", "500", "600", "800"]})
 
 export const metadata: Metadata = {
-  title: "Hero section Challenge",
-  description: "30 days hero section challenge",
+  title: "Hero section designs",
+  description: "Hero section Designs",
 };
 
 export default function RootLayout({
