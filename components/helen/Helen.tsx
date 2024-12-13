@@ -41,8 +41,8 @@ const Helen = () => {
                 <div className="flex flex-col md:flex-row gap-4 mt-10">
                     <div className="overflow-hidden w-full ">
                         <motion.h1
-                            initial={{y: "100%"}} 
-                            animate={{y: 0}} 
+                            initial={{y: "100%", opacity: 0}} 
+                            animate={{y: 0, opacity: 1}} 
                             transition={transition}
                             className=' w-full text-[13vw] leading-[4rem] md:leading-[6rem] lg:leading-[8rem] uppercase opacity-90'>Helen</motion.h1>
                     </div>
@@ -56,8 +56,8 @@ const Helen = () => {
                 </div>
                 <div className="overflow-hidden">
                     <motion.h1
-                        initial={{y: "100%"}} 
-                        animate={{y: 0}} 
+                        initial={{y: "100%", opacity: 0}} 
+                        animate={{y: 0, opacity: 1}} 
                         transition={{...transition, delay: .02}}                    
                         className='w-full text-[13vw] leading-[4rem] md:leading-[6rem] lg:leading-[8rem] uppercase md:mt-6 opacity-90'>bellingham</motion.h1>
                 </div>
