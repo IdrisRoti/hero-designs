@@ -15,8 +15,8 @@ const Finance = () => {
             src="/finance/wave.png"
             alt='wave background'
             width={1500}
-            height={800}
-            className='w-screen h-[50vh] absolute bottom-0 z-[40] object-cover'
+            height={600}
+            className='w-screen min-h-[50vh] absolute bottom-0 z-[40] object-cover'
         />
         <Header />
         <section className='absolute left-1/2 -translate-x-1/2 z-50 w-full max-w-[50rem] px-4 h-[calc(100vh-80px)] pt-10'>
