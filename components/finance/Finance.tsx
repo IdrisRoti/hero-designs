@@ -36,7 +36,7 @@ const Finance = () => {
                 transition={{duration: .5, delay: 1}} 
                 id="button" 
                 className="flex md:justify-center lg:justify-start gap-4">
-                <button className="text-white tracking-widest font-semibold bg-[#01A9E0] rounded-2xl py-3 md:py-4 px-6 md:px-8 hover:opacity-70 transition capitalize">Join the team</button>
+                <button className="text-white tracking-widest font-semibold bg-[#2B819E] rounded-2xl py-3 md:py-4 px-6 md:px-8 hover:opacity-70 transition capitalize">Join the team</button>
                 <motion.button onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                     <span className='tracking-widest font-semibold'>Learn more</span>
                     <motion.div initial={{width: "0%"}} animate={isHovered ? {width: "100%"} : {width: "0%"}} transition={{duration: .5}} className="h-[1px] bg-white" />
