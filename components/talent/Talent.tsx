@@ -11,7 +11,7 @@ const Talent = () => {
   return (
     <div className="w-screen max-w-[90rem] mx-auto lg:h-screen lg:max-h-[60rem]">
         <section className='w-full h-full grid grid-cols-11'>
-            <div className="lg:col-span-6 col-span-full h-full text-white py-6 px-10">
+            <div className="lg:col-span-6 col-span-full h-full text-white py-6 px-4 md:px-10">
                 <Image
                     src="/finance/Logo.png"
                     alt="Blurforce Logo"
