@@ -24,7 +24,7 @@ const Finance = () => {
                 initial={{opacity:0}} 
                 animate={{opacity:1}} 
                 transition={{duration: .5}}
-                className="text-5xl md:text-7xl text-transparent font-bold bg-gradient-to-b from-white to-white/40 bg-clip-text md:text-center lg:text-left">The financial economy on chain.</motion.h1>
+                className="text-5xl md:text-7xl text-transparent capitalize font-bold bg-gradient-to-b from-white to-white/40 bg-clip-text md:text-center lg:text-left">The financial economy on chain.</motion.h1>
             <motion.p
                 initial={{opacity:0}} 
                 animate={{opacity:1}} 
