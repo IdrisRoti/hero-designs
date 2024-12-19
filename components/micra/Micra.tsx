@@ -5,7 +5,7 @@ import Image from "next/image"
 
 const Micra = () => {
   return (
-    <div className="h-screen max-h-[60rem] max-w-[90rem] mx-auto px-4 overflow-hidden text-[#08163B]">
+    <div className="h-screen max-h-[60rem] max-w-[75rem] mx-auto px-4 overflow-hidden text-[#08163B]">
         <Header />
         <div className="relative h-[55vh] bg-[#E68FDE] rounded-lg flex flex-col overflow-hidden">
             <div className="w-full lg:w-[60%] h-full overflow-hidden p-6 md:p-14 py-10 md:py-0 flex flex-col md:justify-center items-start gap-3">
