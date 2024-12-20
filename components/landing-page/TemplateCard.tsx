@@ -31,12 +31,12 @@ const TemplateCard = ({thumbnail, video, tags, link}: TemplateCardType) => {
         <div 
             onMouseEnter={playVideo}
             onMouseLeave={pauseVideo}
-            className="aspect-video bg-white/10 backdrop-blur-md p-2 rounded-2xl" 
+            className="aspect-video bg-[#1e1e1e]/10 backdrop-blur-md p-2 rounded-2xl" 
         >
             <div className="relative overflow-hidden w-full h-full bg-gradient-to-r from-white/15 from-20% via-white/30 to-white/15 to-80% rounded-xl backdrop-blur-3xl">
                {
                 isPlaying ? (
-                <video autoPlay muted ref={videoRef} src={video} />
+                <video className="absolute inset-0" autoPlay muted ref={videoRef} src={video} />
                ) : (
                         <div className="absolute inset-0 ">
                             <Image
@@ -57,7 +57,7 @@ const TemplateCard = ({thumbnail, video, tags, link}: TemplateCardType) => {
                         <span key={tag} className="px-4 py-1.5 text-xs rounded-full border">{tag}</span>
                     ))
                 }
-                <Link href={link} className="size-8 rounded-full grid place-items-center border hover:bg-white hover:text-[#1e1e1e] transition"><BiLink /></Link>
+                <Link href={link} className="size-8 rounded-full grid place-items-center border hover:bg-green-200 hover:text-[#1e1e1e] transition"><BiLink /></Link>
             </div>
         </div>
     </div>
