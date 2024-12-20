@@ -56,11 +56,3 @@ const LandingPage = () => {
 }
 
 export default LandingPage;
-
-{/* <Image
-                src="/not-found.png"
-                alt="Not found image"
-                width={1000}
-                height={1000}
-                className="mx-auto bg-red-200"
-              /> */}
