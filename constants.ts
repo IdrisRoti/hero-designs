@@ -13,4 +13,11 @@ export const templates = [
         tags: ["Dropdown Menu", "hotel"],
         link: "https://herodesigns.vercel.app/mirage"
     },
+    {
+        id: 3,
+        thumbnail: "/template-thumbnails/game.png",
+        video: "/template-videos/game.mp4",
+        tags: ["Game", "Typography"],
+        link: "https://herodesigns.vercel.app/game"
+    },
 ]

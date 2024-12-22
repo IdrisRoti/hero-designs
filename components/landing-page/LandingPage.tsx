@@ -27,7 +27,7 @@ const LandingPage = () => {
         <h1 className="mt-10 text-3xl font-medium text-center bg-gradient-to-r from-transparent via-[#1e1e1e] to-transparent text-transparent bg-clip-text uppercase">Hero sections for your inspiration</h1>
         <p className="text-center opacity-70">Hero section designs built with NextJs, Tailwind CSS and Framer motion.</p>
         {filteredTemplates.length  ? (
-          <main className="relative z-10 mt-5 grid grid-cols-2 gap-4">
+          <main className="relative z-10 mt-5 grid grid-cols-3 gap-4">
             {
               filteredTemplates.map(({id, thumbnail, video, tags, link}) => {
                 return (
