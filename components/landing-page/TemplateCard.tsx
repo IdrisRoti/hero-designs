@@ -27,7 +27,7 @@ const TemplateCard = ({thumbnail, video, tags, link}: TemplateCardType) => {
     }
 
   return (
-    <div className="col-span-2 md:col-span-1">
+    <div className="col-span-3 md:col-span-1">
         <div 
             onMouseEnter={playVideo}
             onMouseLeave={pauseVideo}
