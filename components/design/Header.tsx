@@ -8,7 +8,7 @@ import MobileNav from "./MobileNav"
 export const navLinks = ["About", "Product", "Works", "People", "Contact"]
 
 const Header = () => (
-    <header className="h-20">
+    <header className="h-16">
         <div className="h-full flex justify-between items-center">
             <motion.span initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: .5, ease: "easeInOut"}} >
                 <Image

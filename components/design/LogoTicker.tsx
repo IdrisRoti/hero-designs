@@ -6,7 +6,7 @@ const TickerLogos = ["/agency/blurforce.png", "/connect/unitect.png", "/akira/lo
 const LogoTicker = () => {
   return (
         <>
-            <div className="flex items-center w-full md:w-1/2 mx-auto overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+            <div className="my-8 flex items-center w-full md:w-1/2 mx-auto overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
                 <motion.div 
                     initial={{x: "-100%"}}
                     animate={{x: "0%"}}

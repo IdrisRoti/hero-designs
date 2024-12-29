@@ -8,7 +8,7 @@ const Design = () => {
   return (
     <div className="max-w-[75rem] mx-auto px-4">
         <Header />
-        <main className="mb-10 flex flex-col lg:flex-row py-5 md:py-10 gap-8 md:gap-14 lg:gap-2 md:text-center lg:text-left">
+        <main className="flex flex-col lg:flex-row py-5 gap-8 md:gap-14 lg:gap-2 md:text-center lg:text-left">
             <div className="w-full lg:w-[60%]">
                 {
                     ["Design", "innovate", "construct"].map((word, i) => (

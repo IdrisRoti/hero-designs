@@ -39,9 +39,8 @@ const MobileNav = () => {
                                     <motion.li
                                         key={link}
                                         initial={{y: 20, opacity: 0}}
-                                        animate={{y: 0, opacity: 1}}
-                                        exit={{y: 20, opacity: 0}}
-                                        transition={{duration: .5, ease: "easeInOut", delay: i * 0.2}}
+                                        animate={{y: 0, opacity: 1, transition: {duration: .5, ease: "easeInOut", delay: i * 0.2}}}
+                                        exit={{y: 20, opacity: 0, transition: {duration: .5, ease: "easeInOut", delay: i * 0.1}}}
                                     >
                                         <button 
                                             className={`font-medium text-4xl hover:text-[#1e1e1e] transition text-[#626262] uppercase tracking-widest`} 
