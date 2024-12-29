@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
-const TickerLogos = ["/agency/blurforce.png", "/akira/logo.png", "/agency/blurforce.png", "/akira/logo.png",  "/agency/blurforce.png", "/akira/logo.png",]
+const TickerLogos = ["/design/arizona.png", "/design/blurforce.png", "/design/unitect.png", "/design/flavour.png", "/design/uspace.png",]
 
 const LogoTicker = () => {
   return (

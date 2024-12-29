@@ -20,7 +20,7 @@ const Design = () => {
                                 initial={{y: "100%"}}
                                 animate={{y: 0}}
                                 transition={{ delay: .05*i, ease: "easeInOut", duration: .8 }}
-                                className={`uppercase text-7xl md:text-9xl font-medium leading-[.9] ${i === 1 && "text-blue-700"}`}
+                                className={`uppercase text-7xl md:text-9xl font-medium leading-[.9] ${i === 1 && "text-[#0056B8]"}`}
                             >
                                     {word}
                             </motion.p>
@@ -40,7 +40,7 @@ const Design = () => {
                                     initial={{y: "100%"}}
                                     animate={{y: 0}}
                                     transition={{ delay: .05*i, ease: "easeInOut", duration: .8 }}
-                                    className={`uppercase text-3xl font-medium leading-[.98] ${i === 0 ? "text-[#1e1e1e]" : "text-blue-700"}`}
+                                    className={`uppercase text-3xl font-medium leading-[.98] ${i === 0 ? "text-[#1e1e1e]" : "text-[#0056B8]"}`}
                                 >
                                         {word}
                                 </motion.p>
@@ -59,7 +59,7 @@ const Design = () => {
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{ delay: 1.5,ease: "easeInOut" }}
-                    className='bg-blue-700 hover:bg-blue-500 transition px-6 py-2 rounded-lg text-white border-none outline-none'>
+                    className='bg-[#0056B8] hover:bg-blue-500 transition px-6 py-2 rounded-lg text-white border-none outline-none'>
                         Learn More
                 </motion.button>
             </div>
