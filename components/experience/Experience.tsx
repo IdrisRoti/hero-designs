@@ -5,7 +5,18 @@ import Header from "./Header"
 import Image from "next/image"
 import { motion } from "framer-motion"
 
-const heroImages = ["/experience/image1.jpg", "/experience/image2.jpg"]
+const heroImages = [
+    {   
+        id: 1,
+        url: "/experience/girl.png",
+        alt: "A woman taking a selfie with lambs"
+    },
+    {   
+        id: 2,
+        url: "/experience/boy.png",
+        alt: "A man on glasses taking a selfie in front of Effiel Tower"
+    },
+];
 
 const Experience = () => {
   return (
@@ -22,18 +33,18 @@ const Experience = () => {
             </div>
             <div className="relative w-full h-full flex">
                 {
-                    heroImages.map((image, i) => (
+                    heroImages.map(({id, url, alt}, i) => (
                         <motion.div 
                             initial={{ scale: .5}}
                             animate={i === 0 ? {rotate: "-12deg", scale: 1} : { rotate: "12deg", scale: 1}}
                             transition={{duration: .3, delay: i*.1, type: "spring"}}
-                            key={image} 
+                            key={id} 
                             className="h-[100%] lg:h-[70%] w-[60%] bg-white p-1.5 shadow-xl absolute first:top-16 md:first:top-24 lg:first:top-16 last:bottom-0 last:right-0"
                         >
                             <div className="w-full h-[90%] relative">
                                 <Image
-                                    src={image}
-                                    alt="Five happy smiling men, forming a circle embracing each other"
+                                    src={url}
+                                    alt={alt}
                                     fill
                                     className="object-cover"
                                 />

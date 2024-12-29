@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const navLinks = ["About", "Download", "Team", "Contact"];
 
 const Header = () => {
@@ -5,7 +7,12 @@ const Header = () => {
     <header className='w-full h-16 bg-red-900/50 fixed left-0 top-0 z-10'>
         <nav className="h-full max-w-[75rem] mx-auto px-4 flex justify-between">
             <div className="h-full flex items-center gap-6">
-                <div className='size-6 bg-white rounded-full' />
+                <Image
+                    src="/experience/logo.png"
+                    alt="Logo"
+                    width={24}
+                    height={24}
+                />
                 <ul className='flex items-center gap-5 md:gap-10 max-md:absolute top-[76px]'>
                     {
                         navLinks.map((link) => (
