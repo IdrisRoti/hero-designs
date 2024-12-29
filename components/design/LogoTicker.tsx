@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
-const TickerLogos = ["/agency/blurforce.png", "/connect/unitect.png", "/akira/logo.png"]
+const TickerLogos = ["/agency/blurforce.png", "/akira/logo.png", "/agency/blurforce.png", "/akira/logo.png",  "/agency/blurforce.png", "/akira/logo.png",]
 
 const LogoTicker = () => {
   return (
         <>
-            <div className="my-8 flex items-center w-full md:w-1/2 mx-auto overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+            <div className="my-8 flex items-center w-screen md:w-1/2 mx-auto overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
                 <motion.div 
                     initial={{x: "-100%"}}
                     animate={{x: "0%"}}
