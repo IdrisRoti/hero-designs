@@ -55,11 +55,11 @@ const Helen = () => {
                     </div>
                 </div>
                 <div className="overflow-hidden">
-                    <motion.h1
+                    <motion.h2
                         initial={{y: "100%", opacity: 0}} 
                         animate={{y: 0, opacity: 1}} 
                         transition={{...transition, delay: .02}}                    
-                        className='w-full text-[13vw] leading-[4rem] md:leading-[6rem] lg:leading-[8rem] uppercase md:mt-6 opacity-90'>bellingham</motion.h1>
+                        className='w-full text-[13vw] leading-[4rem] md:leading-[6rem] lg:leading-[8rem] uppercase md:mt-6 opacity-90'>bellingham</motion.h2>
                 </div>
             </div>
         </section>      
