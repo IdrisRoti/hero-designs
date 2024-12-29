@@ -6,12 +6,12 @@ const TickerLogos = ["/agency/blurforce.png", "/akira/logo.png", "/agency/blurfo
 const LogoTicker = () => {
   return (
         <>
-            <div className="my-8 flex items-center w-screen md:w-1/2 mx-auto overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+            <div className="my-8 flex items-center w-full md:w-1/2 mx-auto overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
                 <motion.div 
                     initial={{x: "-100%"}}
                     animate={{x: "0%"}}
                     transition={{duration: 10, ease: "linear", repeat: Infinity}}
-                    className="flex items-center w-full shrink-0">
+                    className="flex items-center w-auto shrink-0">
                     {
                         TickerLogos.map((logo, i) => (
                         <div 
@@ -33,7 +33,7 @@ const LogoTicker = () => {
                     initial={{x: "-100%"}}
                     animate={{x: "0%"}}
                     transition={{duration: 10, ease: "linear", repeat: Infinity}}
-                    className="flex items-center w-full shrink-0">
+                    className="flex items-center w-auto shrink-0">
                     {
                         TickerLogos.map((logo, i) => (
                         <div 
