@@ -1,16 +1,25 @@
 "use client"
 
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useRef, useState } from "react";
+
 import { BiLink } from "react-icons/bi";
+
+import VideoPlayerLoader from "./VideoPlayerLoader";
 
 interface TemplateCardType {
     thumbnail: string; 
-    video: string; 
+    video: string | null; 
     tags: string[];
     link: string;
 }
+
+const VideoPlayer = dynamic(() => import("./VideoPlayer"), {
+    ssr: false,
+    loading: () => <VideoPlayerLoader />
+})
 
 const TemplateCard = ({thumbnail, video, tags, link}: TemplateCardType) => {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -19,31 +28,33 @@ const TemplateCard = ({thumbnail, video, tags, link}: TemplateCardType) => {
     const playVideo = () => {
         videoRef.current?.play();
         setIsPlaying(true);
+        console.log("Mouse Enter")
     }
 
     const pauseVideo = () => {
         videoRef.current?.pause();
         setIsPlaying(false)
+        console.log("Mouse Leave")
     }
 
   return (
     <div className="col-span-3 md:col-span-1">
-        <div 
-            onMouseEnter={playVideo}
-            onMouseLeave={pauseVideo}
+        <div
+            {...(video &&{ onMouseEnter: playVideo })}
+            {...(video &&{ onMouseLeave: pauseVideo })}
             className="aspect-video bg-[#1e1e1e]/10 backdrop-blur-md p-2 rounded-2xl" 
         >
             <div className="relative overflow-hidden w-full h-full bg-gradient-to-r from-white/15 from-20% via-white/30 to-white/15 to-80% rounded-xl backdrop-blur-3xl">
                {
-                isPlaying ? (
-                <video className="absolute inset-0" autoPlay muted ref={videoRef} src={video} />
+                isPlaying && video ? (
+                <VideoPlayer video={video} videoRef={videoRef} />
                ) : (
                         <div className="absolute inset-0 ">
                             <Image
                                 src={thumbnail}
                                 fill
                                 alt="website template image"
-                                className="object-cover object-left"
+                                className="object-cover"
                             />
                         </div>
                     )

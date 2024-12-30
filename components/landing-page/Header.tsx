@@ -38,7 +38,6 @@ const Header = ({handleSetFileredTemplates}: {handleSetFileredTemplates: (filter
     }
 
     const searchWord = watch("search");
-    console.log("searchWord", searchWord)
 
   return (
     <>
